@@ -15,38 +15,47 @@ const MyButton = ({ project }) => {
 
     return (
         <div>
-            <button onClick={openModal}>Open Modal</button>
+            <button onClick={openModal}>View More</button>
             <Modal
                 onClose={closeModal}
                 open={isModalOpen}
                 style={{
                     position: 'absolute',
-                    border: '2px solid #000',
-
                     boxShadow: '2px solid black',
                     height: 220,
                     width: 640,
                     margin: 'auto'
                 }}
-                className='modal-class'
+
             >
-                <div
-                    style={{
-                        backgroundColor: '#222', // Dark background color
-                        color: 'white', // Text color
-                        padding: '20px',
-                        borderRadius: '5px',
-                        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', // Box shadow for the modal
-                    }}
-                >
-                    <h2>Project Info</h2>
-                    <p>Title: {project.title}</p>
-                    <p>Technologies: {project.tech}</p>
-                    <p>Frontend: {project.frontend}</p>
-                    <p>Backend: {project.backend}</p>
-                    <p>Database: {project.db}</p>
-                    <p>Infrastructure: {project.infra}</p>
-                    <button onClick={closeModal}>Close</button>
+                <div className="cont">
+                    <div className="card">
+                        <div className="container-card bg-green-box">
+                            <p className="card-title">Project Info</p>
+                            <div>
+                                <span className="category">Title:</span>
+                                <span className="card-description">{project.title}</span>
+                            </div>
+                            <div>
+                                <span className="category">TechnicalSkillset.Frontend:</span>
+                                <span className="card-description">{project.frontend}</span>
+                            </div>
+
+                            <div>
+                                <span className="category">TechnicalSkillset.Backend:</span>
+                                <span className="card-description">{project.backend}</span>
+                            </div>
+
+                            <div>
+                                <span className="category">TechnicalSkillset.Database:</span>
+                                <span className="card-description">{project.db}</span>
+                            </div>
+                            <div>
+                                <span className="category">TechnicalSkillset.Infrastructure:</span>
+                                <span className="card-description">{project.infra}</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Modal>
             <div className="design-container">
