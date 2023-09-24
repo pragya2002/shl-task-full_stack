@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios, { formToJSON } from 'axios';
+import MyButton from './MyButton';
 
 
 const Index = () => {
@@ -60,18 +61,7 @@ const Index = () => {
                                         <img src={"https://source.unsplash.com/random/900*700/?night&" + i} alt="Brohm Lake" />
                                     </figure>
 
-                                    <button>View More</button>
-
-                                    <div className="design-container">
-                                        <span className="design design--1"></span>
-                                        <span className="design design--2"></span>
-                                        <span className="design design--3"></span>
-                                        <span className="design design--4"></span>
-                                        <span className="design design--5"></span>
-                                        <span className="design design--6"></span>
-                                        <span className="design design--7"></span>
-                                        <span className="design design--8"></span>
-                                    </div>
+                                    <MyButton project={project} />
                                 </div>
 
                             </div>
