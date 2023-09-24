@@ -4,7 +4,7 @@
 
 ## Description
 
-This is an end-to-end application that allows users to explore information extracted from various project descriptions. Users can view project details in a gallery view, a list view, and perform specific project searches. The application also includes smart search functionality using GPT-3.5/4 for multi-attribute searches.
+This is an end-to-end application that allows users to explore information extracted from various project descriptions. Users can view project details in a gallery view, a list view, and perform specific project searches. The application also includes smart search functionality using GPT-3.5/4 for multi-attribute searches. Link to application working: https://www.loom.com/share/73725ce2e3f340718324cf1515c8f756?sid=3d222090-402a-429c-abfb-e49ab535f73e
 
 ## Features
 
