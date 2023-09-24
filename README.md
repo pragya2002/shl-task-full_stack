@@ -14,7 +14,7 @@ This is an end-to-end application that allows users to explore information extra
 
 - **List View**: Allows users to explore detailed project information by clicking on individual projects.
 
-- **Search Functionality**: Provides a search feature for finding specific projects. Optionally, smart search using GPT-3.5/4 enables multi-attribute searches. For example, users can find projects where ReactJS is used in the front-end, and Python is used in the backend.
+- **Search Functionality**: Provides a search feature for finding specific projects. Optionally, smart search using Hugging Face enables multi-attribute searches. For example, users can find projects where ReactJS is used in the front-end, and Python is used in the backend.
 
 - **Responsive Design**: The application is responsive, ensuring it works seamlessly on different screen sizes, including mobile devices.
 
