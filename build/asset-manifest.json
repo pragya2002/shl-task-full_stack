@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shl-task-full_stack/static/css/main.93e4b1f4.css",
+    "main.js": "/shl-task-full_stack/static/js/main.ebe85c7b.js",
+    "index.html": "/shl-task-full_stack/index.html",
+    "main.93e4b1f4.css.map": "/shl-task-full_stack/static/css/main.93e4b1f4.css.map",
+    "main.ebe85c7b.js.map": "/shl-task-full_stack/static/js/main.ebe85c7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e4b1f4.css",
+    "static/js/main.ebe85c7b.js"
+  ]
+}
