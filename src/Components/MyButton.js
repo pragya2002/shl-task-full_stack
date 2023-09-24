@@ -37,6 +37,10 @@ const MyButton = ({ project }) => {
                                 <span className="card-description">{project.title}</span>
                             </div>
                             <div>
+                                <span className="category">Project Technologies:</span>
+                                <span className="card-description">{project.tech}</span>
+                            </div>
+                            <div>
                                 <span className="category">TechnicalSkillset.Frontend:</span>
                                 <span className="card-description">{project.frontend}</span>
                             </div>

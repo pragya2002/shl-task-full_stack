@@ -10,15 +10,13 @@ export const SearchBar = ({ setResults }) => {
     fetch("https://iodized-wheat-bougon.glitch.me/")
       .then((response) => response.json())
       .then((json) => {
-        const results = json.filter((project) => {
-          console.log(typeof (project));
+        const results = json.filter((user) => {
           return (
             value &&
-            project &&
-            project.title &&
-            project.title.toLowerCase().includes(value)
+            user &&
+            user.title &&
+            user.title.toLowerCase().includes(value)
           );
-
         });
         setResults(results);
       });
