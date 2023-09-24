@@ -9,11 +9,11 @@ const Index = () => {
 
     useEffect(() => {
         // Replace with the actual API endpoint
-        const apiUrl = 'https://api.github.com/users';
+        const apiUrl = 'https://iodized-wheat-bougon.glitch.me/';
 
         axios.get(apiUrl)
             .then((response) => {
-                setProjects(Array.from(response.data));
+                setProjects(response.data);
             })
             .catch((error) => {
                 console.error('Error fetching data:', error);

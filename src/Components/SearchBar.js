@@ -7,16 +7,18 @@ export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
 
   const fetchData = (value) => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://iodized-wheat-bougon.glitch.me/")
       .then((response) => response.json())
       .then((json) => {
-        const results = json.filter((user) => {
+        const results = json.filter((project) => {
+          console.log(typeof (project));
           return (
             value &&
-            user &&
-            user.name &&
-            user.name.toLowerCase().includes(value)
+            project &&
+            project.title &&
+            project.title.toLowerCase().includes(value)
           );
+
         });
         setResults(results);
       });
